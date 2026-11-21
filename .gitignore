@@ -1,0 +1,11 @@
+.cache/
+.api.log
+.venv/
+__pycache__/
+.env
+.anthropic-key
+node_modules/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+/prompt-practice-lab-ja.zip

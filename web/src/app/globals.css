@@ -1,0 +1,28 @@
+@import '@astryxdesign/core/reset.css';
+@import '@astryxdesign/core/astryx.css';
+@import '@astryxdesign/theme-chocolate/fonts.css';
+@import '@astryxdesign/theme-chocolate/theme.css';
+
+body {
+  font-family: var(--font-family-body);
+}
+
+/* コード編集欄だけ等幅（TextArea の containerClassName + Astryx の部品クラスで当てる。Astryx にコード入力用のコンポーネントがないため） */
+.code-input .astryx-text-area-control {
+  font-family: var(--font-family-code);
+  white-space: pre;
+  tab-size: 2;
+}
+
+/* 方案プレビューの iframe（指定幅で描いて縮小する） */
+.preview-frame {
+  border: 0;
+  transform-origin: 0 0;
+  background: var(--color-background-surface);
+}
+
+.output {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin-block: 0.75em;
+}
